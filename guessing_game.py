@@ -2,11 +2,12 @@
 # 4 NOV 2024
 # Guessing Game
 
-from random import randint
+from random import randint, shuffle
 from time import sleep
 
 numbers = [1,2,3,4,5,6,7,8,9,10]
 
+shuffle(numbers)
 secret_num = numbers[randint(0,len(numbers)-1)]
 
 attempts = 0
